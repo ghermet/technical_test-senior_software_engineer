@@ -2,10 +2,10 @@
   "name": "@test/client",
   "version": "1.0.0",
   "scripts": {
-    "dev": "webpack serve --config webpack.config.js --mode development",
+    "dev": "npx parcel src/index.html -p 4000",
     "start": "npx serve -s dist -l 4000",
     "prebuild": "npm run tw-generate",
-    "build": "rm -rf dist && webpack --config webpack.config.js --mode production",
+    "build": "rm -rf dist && npx parcel build src/index.html --no-source-maps",
     "tw-generate": "tailwindcss -i ./src/styles/globals.css -o ./src/styles/globals.generated.css",
     "tw-watch": "npm run tw-generate --watch",
     "storybook": "ladle serve",
@@ -23,8 +23,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "styled-components": "^5.3.3",
-    "tailwind-merge": "^1.14.0",
-    "webpack": "^5.88.2"
+    "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.15",
@@ -32,25 +31,19 @@
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "babel-loader": "^9.1.3",
-    "css-loader": "^6.8.1",
-    "css-minimizer-webpack-plugin": "^5.0.1",
-    "html-webpack-plugin": "^5.5.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "mini-css-extract-plugin": "^2.7.6",
-    "postcss": "^8.4.29",
-    "postcss-loader": "^7.3.3",
+    "parcel": "^2.9.3",
     "postcss-preset-env": "^9.1.3",
-    "sass": "^1.67.0",
-    "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3",
+    "process": "^0.11.10",
     "tailwindcss": "^3.3.3",
-    "ts-loader": "^9.4.4",
     "ts-node": "^10.9.1",
-    "typescript": "^5.2.2",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "typescript": "^5.2.2"
+  },
+  "@parcel/bundler-default": {
+    "minBundles": 1,
+    "minBundleSize": 3000,
+    "maxParallelRequests": 20
   }
 }
