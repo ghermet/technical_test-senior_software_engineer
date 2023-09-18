@@ -10,11 +10,13 @@ interface Person {
   id: string
   lastName: string
   status: string
+  profilePicture?: string
 }
 
 interface PaginationArguments {
   filter?: string
   from?: string
+  page?: number
   limit?: number
 }
 
@@ -32,12 +34,15 @@ const typeDefs = gql`
     createdAt: Date!
     id: ID!
     fullName: String!
+    profilePicture: String!
     status: Status!
   }
 
   type Query {
     countPeople(filter: String): Int
     people(filter: String, from: ID, limit: Int): [People]!
+    peopleByPage(filter: String, page: Int, limit: Int): [People]!
+    loadMorePeople(filter: String, page: Int, limit: Int): [People]!
   }
 `
 
@@ -55,6 +60,13 @@ const search = (data: Person[], filter: string = ''): Person[] => {
   })
 }
 
+const profilePicture = async (retries = 0): Promise<string> => {
+  return fetch('https://randomuser.me/api/')
+    .then((res) => res.json())
+    .then((res) => res.results[0].picture.thumbnail)
+    .catch(() => (retries < 3 ? profilePicture(retries++) : ''))
+}
+
 const resolvers = {
   People: {
     fullName: formatFullName,
@@ -69,7 +81,24 @@ const resolvers = {
       const data = search(people, filter)
       const startIndex = data.findIndex(({ id }) => id === from) + 1
 
-      return data.slice(startIndex, Math.max(1, limit))
+      return data.slice(startIndex, Math.max(1, limit)).map(async (person) => {
+        return {
+          ...person,
+          profilePicture: await profilePicture(),
+        }
+      })
+    },
+
+    peopleByPage(context: any, { filter, page = 1, limit = 10 }: PaginationArguments) {
+      const data = search(people, filter)
+      const startIndex = (page - 1) * limit
+
+      return data.slice(startIndex, startIndex + limit).map(async (person) => {
+        return {
+          ...person,
+          profilePicture: await profilePicture(),
+        }
+      })
     },
   },
 }

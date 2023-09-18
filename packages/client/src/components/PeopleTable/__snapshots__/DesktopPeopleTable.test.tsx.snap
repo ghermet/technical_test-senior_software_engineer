@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DesktopPeopleTable should render a table element with the correct default classnames and props 1`] = `
+<div
+  class="overflow-auto mb-6"
+>
+  <table
+    class="w-full"
+    id="desktop-people-table"
+  >
+    <thead
+      class="block w-full bg-neutral4 laptop:rounded-lg"
+    >
+      <tr
+        class="grid-flow-row grid-rows-1 gap-6 justify-normal items-center laptop:rounded-lg py-[1.25rem] px-[1.5rem] grid mb-6 grid-cols-peopleTableMobile bg-neutral4 laptop:grid-cols-peopleTable"
+      >
+        <th
+          class="body-bold-16 flex justify-start text-neutral2"
+        >
+          <span
+            class="inline-block h-6 relative align-middle w-6"
+          >
+            <input
+              aria-label="Select all people"
+              class="peer/input appearance-none border-neutral3 rounded h-[inherit] outline-offset-2 w-[inherit] m-0 p-0 border-2 border-solid enabled:cursor-pointer transition-colors duration-150 ease-in-out checked:bg-primary2 checked:border-primary2 checked:focus:outline-primary2 focus:outline-2 checked:focus:outline-dashed focus:outline-neutral3 focus:outline-dashed focus-within:outline-neutral3 focus-within:outline-2 focus-within:outline-dashed disabled:cursor-not-allowed"
+              type="checkbox"
+            />
+            <svg
+              class="fill-white pointer-events-none absolute transition-[visibility] duration-[0s] ease-linear delay-150 invisible left-0 top-0 peer-checked/input:transition-[visibility] peer-checked/input:duration-[0s] peer-checked/input:ease-linear peer-checked/input:delay-[0s] peer-checked/input:visible"
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.63,4.23c-.16-.16-.41-.32-.57-.16-.56.56-1.49.58-1.92,1.35v0c-.57.67-1.38,1.08-1.63,2a.35.35,0,0,0,.08,0l-.08,0c-.15.08-.16.23-.16.38l0,0a11.4,11.4,0,0,1-.89,1.08h0c-.08.15-.15.24-.23.37l-.09,0c-.23.41-.55.76-.8,1.17h0a10.34,10.34,0,0,1-.53,1l-.2.2a1.54,1.54,0,0,0-.05.17,2.6,2.6,0,0,0-.62,1.39l0,.05c-.09.07-.16.23-.25.32l0,.06a3.05,3.05,0,0,0-.7.88.18.18,0,0,0-.07.05.73.73,0,0,0-.16.41.06.06,0,0,0,0,0,4.53,4.53,0,0,0-.79,1.11l.08.08-.06,0c-.25.07-.09.67-.57.57l-.14-.09c-.23-.38-.44-.81-.66-1.27a.43.43,0,0,1,0-.11v-.12h0a.08.08,0,0,0,0,0,.3.3,0,0,1,0-.13c-.07-.22-.18-.47-.27-.72l-.09-.28A2.18,2.18,0,0,1,7,13.46a1.89,1.89,0,0,0-.8-1l0,0a.81.81,0,0,0-1.07-.24c-.39.25-.16.67.09.92a0,0,0,0,1,0,0,.91.91,0,0,0,.15.38h0A19.54,19.54,0,0,0,7,18.09a1,1,0,0,0,.07-.15,1,1,0,0,1,0,.17,1.15,1.15,0,0,0,.23.55l0,0H7.29c.51.67,1.08,1.17,2.05.76v0a1.26,1.26,0,0,0,.68-.78l.12-.1c0-.25.09-.41.09-.57.74-.48.9-1.31,1.31-2.07A6,6,0,0,1,12,15a3.86,3.86,0,0,0,.8-2.12l-.08,0,0,0c.07,0,.08-.07.09-.11l0,0c.48-.07.48-.51.57-.83l-.12.08.12-.17.16-.16v0l0,0a9.67,9.67,0,0,0,2.11-3,.56.56,0,0,1,.05-.08s0,.06,0,.08c.32-.41,1.06-.64.64-1.4h0c.9-.25,1.22-1,1.7-1.59h0c.07-.16.16-.25.23-.41h0c.09-.09.25-.16.34-.25V5C19,4.78,18.87,4.47,18.63,4.23ZM16.2,6l0,0-.11,0ZM7.54,16.87h0l-.08.06Zm-.13.34s0,0,0,.05h0S7.4,17.23,7.41,17.21Z"
+              />
+            </svg>
+          </span>
+        </th>
+        <th
+          class="body-bold-16 flex justify-start text-neutral2 laptop:hidden"
+        >
+          People
+        </th>
+        <th
+          class="body-bold-16 justify-start text-neutral2 hidden laptop:flex"
+        >
+          Created at
+        </th>
+        <th
+          class="body-bold-16 justify-start text-neutral2 hidden laptop:flex"
+        >
+          Name
+        </th>
+        <th
+          class="body-bold-16 justify-start hidden laptop:flex items-center gap-4 text-neutral1"
+        >
+          <svg
+            fill="currentColor"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,8a8,8,0,1,0-8,8A8,8,0,0,0,16,8ZM7,10V3H9v7Zm2.25,2.25A1.25,1.25,0,1,1,8,11,1.25,1.25,0,0,1,9.25,12.25Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          ID
+        </th>
+        <th
+          class="body-bold-16 justify-start text-neutral2 hidden laptop:flex"
+        >
+          Status
+        </th>
+        <th
+          class="body-bold-16 text-neutral2 hidden justify-end"
+        >
+          Options
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="block w-full"
+    >
+      <tr
+        class="grid-flow-row grid-rows-1 gap-6 justify-normal laptop:rounded-lg py-[1.25rem] px-[1.5rem] bg-white peopleTable-row grid items-baseline grid-cols-peopleTableMobile laptop:items-center laptop:grid-cols-peopleTable laptop:h-16 transition-colors duration-150 ease-in-out"
+      >
+        <td
+          class="body-16 flex justify-start"
+        >
+          <span
+            class="inline-block h-6 relative align-middle w-6"
+          >
+            <input
+              aria-label="Select John Doe"
+              class="peer/input appearance-none border-neutral3 rounded h-[inherit] outline-offset-2 w-[inherit] m-0 p-0 border-2 border-solid enabled:cursor-pointer transition-colors duration-150 ease-in-out checked:bg-primary2 checked:border-primary2 checked:focus:outline-primary2 focus:outline-2 checked:focus:outline-dashed focus:outline-neutral3 focus:outline-dashed focus-within:outline-neutral3 focus-within:outline-2 focus-within:outline-dashed disabled:cursor-not-allowed"
+              type="checkbox"
+            />
+            <svg
+              class="fill-white pointer-events-none absolute transition-[visibility] duration-[0s] ease-linear delay-150 invisible left-0 top-0 peer-checked/input:transition-[visibility] peer-checked/input:duration-[0s] peer-checked/input:ease-linear peer-checked/input:delay-[0s] peer-checked/input:visible"
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.63,4.23c-.16-.16-.41-.32-.57-.16-.56.56-1.49.58-1.92,1.35v0c-.57.67-1.38,1.08-1.63,2a.35.35,0,0,0,.08,0l-.08,0c-.15.08-.16.23-.16.38l0,0a11.4,11.4,0,0,1-.89,1.08h0c-.08.15-.15.24-.23.37l-.09,0c-.23.41-.55.76-.8,1.17h0a10.34,10.34,0,0,1-.53,1l-.2.2a1.54,1.54,0,0,0-.05.17,2.6,2.6,0,0,0-.62,1.39l0,.05c-.09.07-.16.23-.25.32l0,.06a3.05,3.05,0,0,0-.7.88.18.18,0,0,0-.07.05.73.73,0,0,0-.16.41.06.06,0,0,0,0,0,4.53,4.53,0,0,0-.79,1.11l.08.08-.06,0c-.25.07-.09.67-.57.57l-.14-.09c-.23-.38-.44-.81-.66-1.27a.43.43,0,0,1,0-.11v-.12h0a.08.08,0,0,0,0,0,.3.3,0,0,1,0-.13c-.07-.22-.18-.47-.27-.72l-.09-.28A2.18,2.18,0,0,1,7,13.46a1.89,1.89,0,0,0-.8-1l0,0a.81.81,0,0,0-1.07-.24c-.39.25-.16.67.09.92a0,0,0,0,1,0,0,.91.91,0,0,0,.15.38h0A19.54,19.54,0,0,0,7,18.09a1,1,0,0,0,.07-.15,1,1,0,0,1,0,.17,1.15,1.15,0,0,0,.23.55l0,0H7.29c.51.67,1.08,1.17,2.05.76v0a1.26,1.26,0,0,0,.68-.78l.12-.1c0-.25.09-.41.09-.57.74-.48.9-1.31,1.31-2.07A6,6,0,0,1,12,15a3.86,3.86,0,0,0,.8-2.12l-.08,0,0,0c.07,0,.08-.07.09-.11l0,0c.48-.07.48-.51.57-.83l-.12.08.12-.17.16-.16v0l0,0a9.67,9.67,0,0,0,2.11-3,.56.56,0,0,1,.05-.08s0,.06,0,.08c.32-.41,1.06-.64.64-1.4h0c.9-.25,1.22-1,1.7-1.59h0c.07-.16.16-.25.23-.41h0c.09-.09.25-.16.34-.25V5C19,4.78,18.87,4.47,18.63,4.23ZM16.2,6l0,0-.11,0ZM7.54,16.87h0l-.08.06Zm-.13.34s0,0,0,.05h0S7.4,17.23,7.41,17.21Z"
+              />
+            </svg>
+          </span>
+        </td>
+        <td
+          class="body-16 justify-start hidden laptop:flex"
+        >
+          01 Jan, 12 AM:00
+        </td>
+        <td
+          class="body-16 justify-start hidden laptop:flex items-center gap-4"
+        >
+          <img
+            alt="Profile picture"
+            class="w-6 h-6 rounded-full invisible"
+          />
+          John Doe
+        </td>
+        <td
+          class="body-16 justify-start hidden laptop:flex whitespace-nowrap"
+        >
+          1
+        </td>
+        <td
+          class="body-16 justify-start hidden laptop:flex"
+        >
+          <span
+            class="flex items-center flex-nowrap gap-2 body-book-16 capitalize text-primary2"
+          >
+            <svg
+              class="fill-primary2"
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12,0C8.63,2.87,6.52,3,3,3V14.53c0,4.61,3.2,5.81,9,9.47,5.8-3.66,9-4.86,9-9.47V3C17.48,3,15.37,2.87,12,0Zm0,1.29A11.5,11.5,0,0,0,20,4V14.53c0,3.9-2.64,5-8,8.29-5.38-3.35-8-4.41-8-8.29V4A11.5,11.5,0,0,0,12,1.29ZM17,9l-6,6.62L7.34,11.72,8,11l3,3.18,5.22-5.87Z"
+              />
+            </svg>
+             
+            protected
+          </span>
+        </td>
+        <td
+          class="body-16 hidden laptop:flex justify-end"
+        >
+          <button
+            aria-label="People's options"
+            class="items-center appearance-none rounded text-white cursor-pointer outline-offset-2 outline-dashed inline-flex justify-center align-middle p-0 border-none transition-colors duration-150 ease-in-out focus:outline-accent1Hover focus:outline-2 focus-visible:outline-accent1Hover focus-visible:outline-2 bg-transparent w-10 h-10 outline-transparent hover:bg-neutral4Hover active:bg-neutral4Hover focus-visible:bg-neutral4Hover disabled:bg-transparent disabled:cursor-not-allowed"
+          >
+            <svg
+              class="fill-neutral1 w-10 h-10"
+              fill="none"
+              height="40"
+              viewBox="0 0 40 40"
+              width="40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M20 24C21.656 24 23 25.344 23 27C23 28.656 21.656 30 20 30C18.344 30 17 28.656 17 27C17 25.344 18.344 24 20 24ZM20 25C21.104 25 22 25.896 22 27C22 28.104 21.104 29 20 29C18.896 29 18 28.104 18 27C18 25.896 18.896 25 20 25ZM20 17C21.656 17 23 18.344 23 20C23 21.656 21.656 23 20 23C18.344 23 17 21.656 17 20C17 18.344 18.344 17 20 17ZM20 18C21.104 18 22 18.896 22 20C22 21.104 21.104 22 20 22C18.896 22 18 21.104 18 20C18 18.896 18.896 18 20 18ZM20 10C21.656 10 23 11.344 23 13C23 14.656 21.656 16 20 16C18.344 16 17 14.656 17 13C17 11.344 18.344 10 20 10ZM20 11C21.104 11 22 11.896 22 13C22 14.104 21.104 15 20 15C18.896 15 18 14.104 18 13C18 11.896 18.896 11 20 11Z"
+                fill="#050505"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </td>
+        <td
+          class="body-16 justify-start flex flex-col gap-4 laptop:hidden"
+        >
+          <div
+            class="flex items-center justify-between gap-4"
+          >
+            <div
+              class="flex items-center gap-4"
+            >
+              <img
+                alt="Profile picture"
+                class="w-6 h-6 rounded-full invisible"
+              />
+              John Doe
+            </div>
+            <button
+              aria-label="People's options"
+              class="items-center appearance-none rounded text-white cursor-pointer outline-offset-2 outline-dashed inline-flex justify-center align-middle p-0 border-none transition-colors duration-150 ease-in-out focus:outline-accent1Hover focus:outline-2 focus-visible:outline-accent1Hover focus-visible:outline-2 bg-transparent w-10 h-10 outline-transparent hover:bg-neutral4Hover active:bg-neutral4Hover focus-visible:bg-neutral4Hover disabled:bg-transparent disabled:cursor-not-allowed"
+            >
+              <svg
+                class="fill-neutral1 w-10 h-10"
+                fill="none"
+                height="40"
+                viewBox="0 0 40 40"
+                width="40"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M20 24C21.656 24 23 25.344 23 27C23 28.656 21.656 30 20 30C18.344 30 17 28.656 17 27C17 25.344 18.344 24 20 24ZM20 25C21.104 25 22 25.896 22 27C22 28.104 21.104 29 20 29C18.896 29 18 28.104 18 27C18 25.896 18.896 25 20 25ZM20 17C21.656 17 23 18.344 23 20C23 21.656 21.656 23 20 23C18.344 23 17 21.656 17 20C17 18.344 18.344 17 20 17ZM20 18C21.104 18 22 18.896 22 20C22 21.104 21.104 22 20 22C18.896 22 18 21.104 18 20C18 18.896 18.896 18 20 18ZM20 10C21.656 10 23 11.344 23 13C23 14.656 21.656 16 20 16C18.344 16 17 14.656 17 13C17 11.344 18.344 10 20 10ZM20 11C21.104 11 22 11.896 22 13C22 14.104 21.104 15 20 15C18.896 15 18 14.104 18 13C18 11.896 18.896 11 20 11Z"
+                  fill="#050505"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-nowrap"
+          >
+            <span>
+              1
+            </span>
+            <svg
+              class="relative top-7 right-28 h-4 w-4 tablet:top-1 tablet:left-2"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16,8a8,8,0,1,0-8,8A8,8,0,0,0,16,8ZM7,10V3H9v7Zm2.25,2.25A1.25,1.25,0,1,1,8,11,1.25,1.25,0,0,1,9.25,12.25Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <span
+            class="flex items-center flex-nowrap gap-2 body-book-16 capitalize text-primary2"
+          >
+            <svg
+              class="fill-primary2"
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12,0C8.63,2.87,6.52,3,3,3V14.53c0,4.61,3.2,5.81,9,9.47,5.8-3.66,9-4.86,9-9.47V3C17.48,3,15.37,2.87,12,0Zm0,1.29A11.5,11.5,0,0,0,20,4V14.53c0,3.9-2.64,5-8,8.29-5.38-3.35-8-4.41-8-8.29V4A11.5,11.5,0,0,0,12,1.29ZM17,9l-6,6.62L7.34,11.72,8,11l3,3.18,5.22-5.87Z"
+              />
+            </svg>
+             
+            protected
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

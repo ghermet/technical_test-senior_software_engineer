@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Status should render a PROTECTED status 1`] = `
+<span
+  class="flex items-center flex-nowrap gap-2 body-book-16 capitalize text-primary2"
+>
+  <svg
+    class="fill-primary2"
+    fill="currentColor"
+    height="24"
+    viewBox="0 0 24 24"
+    width="24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12,0C8.63,2.87,6.52,3,3,3V14.53c0,4.61,3.2,5.81,9,9.47,5.8-3.66,9-4.86,9-9.47V3C17.48,3,15.37,2.87,12,0Zm0,1.29A11.5,11.5,0,0,0,20,4V14.53c0,3.9-2.64,5-8,8.29-5.38-3.35-8-4.41-8-8.29V4A11.5,11.5,0,0,0,12,1.29ZM17,9l-6,6.62L7.34,11.72,8,11l3,3.18,5.22-5.87Z"
+    />
+  </svg>
+   
+  protected
+</span>
+`;
+
+exports[`Status should render a VULNERABLE status 1`] = `
+<span
+  class="flex items-center flex-nowrap gap-2 body-book-16 capitalize text-error1"
+>
+  <svg
+    class="fill-error1"
+    fill="currentColor"
+    height="24"
+    viewBox="0 0 24 24"
+    width="24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M24,23H0L12,1ZM1.68,22H22.32L12,3.09ZM12,20a.85.85,0,1,0-.85-.84A.85.85,0,0,0,12,20Zm.5-11v8h-1V9Z"
+    />
+  </svg>
+   
+  vulnerable
+</span>
+`;

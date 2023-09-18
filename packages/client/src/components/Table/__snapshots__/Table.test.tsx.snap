@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table should render a table body element with the correct default classnames and props 1`] = `
+<table>
+  <tbody
+    class="block w-full"
+  >
+    <tr>
+      <td>
+        data value
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Table should render a table cell element with the correct default classnames and props 1`] = `
+<table>
+  <tbody>
+    <tr>
+      <td
+        class="body-16 flex justify-start"
+      >
+        data value
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Table should render a table element with the correct default classnames and props 1`] = `
+<table
+  class="w-full"
+>
+  <thead>
+    <tr>
+      <th>
+        data header
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        data value
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Table should render a table header element with the correct default classnames and props 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th
+        class="body-bold-16 flex justify-start text-neutral2 w-fit"
+      >
+        data header
+      </th>
+    </tr>
+  </thead>
+</table>
+`;
+
+exports[`Table should render a table headers element with the correct default classnames and props 1`] = `
+<table>
+  <thead
+    class="block bg-neutral4 laptop:rounded-lg w-full"
+  >
+    <tr>
+      <th>
+        data header
+      </th>
+      <th>
+        data2 header
+      </th>
+      <th>
+        data3 header
+      </th>
+    </tr>
+  </thead>
+</table>
+`;
+
+exports[`Table should render a table row element with the correct default classnames and props 1`] = `
+<table>
+  <tbody>
+    <tr
+      class="grid grid-flow-row grid-rows-1 gap-6 justify-normal items-center laptop:rounded-lg py-[1.25rem] px-[1.5rem] bg-white"
+    >
+      <td>
+        data value
+      </td>
+      <td>
+        data2 value
+      </td>
+      <td>
+        data3 value
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

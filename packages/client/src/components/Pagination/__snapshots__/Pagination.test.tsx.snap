@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination should render a pagination element correctly 1`] = `
+<div
+  class="flex flex-row items-center justify-between"
+>
+  <span>
+    <span
+      data-testid="current-page"
+    >
+      1
+    </span>
+     -
+     
+    <span
+      data-testid="per-page"
+    >
+      10
+    </span>
+     of
+     
+    <span
+      data-testid="total"
+    >
+      100
+    </span>
+  </span>
+  <div
+    class="flex gap-2"
+  >
+    <button
+      aria-label="Previous page"
+      class="items-center appearance-none bg-accent1 rounded text-white cursor-pointer outline-offset-2 outline-dashed inline-flex h-8 justify-center align-middle w-8 p-0 border-none transition-colors duration-150 ease-in-out hover:bg-accent1Hover focus:outline-accent1Hover focus:outline-2 focus-visible:bg-accent1Hover focus-visible:outline-accent1Hover focus-visible:outline-2 disabled:bg-accent1Disabled disabled:cursor-not-allowed"
+      data-testid="desktop-prev-page-button"
+      disabled=""
+    >
+      <svg
+        fill="currentColor"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M9.58,2.5l1.3,1.3L6.59,8l4.29,4.2-1.3,1.3L4,8Z"
+        />
+      </svg>
+    </button>
+    <button
+      aria-label="Next page"
+      class="items-center appearance-none bg-accent1 rounded text-white cursor-pointer outline-offset-2 outline-dashed inline-flex h-8 justify-center align-middle w-8 p-0 border-none transition-colors duration-150 ease-in-out hover:bg-accent1Hover focus:outline-accent1Hover focus:outline-2 focus-visible:bg-accent1Hover focus-visible:outline-accent1Hover focus-visible:outline-2 disabled:bg-accent1Disabled disabled:cursor-not-allowed"
+      data-testid="desktop-next-page-button"
+    >
+      <svg
+        fill="currentColor"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6.3,2.5,5,3.8,9.28,8,5,12.2l1.3,1.3L11.88,8Z"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;

@@ -13,9 +13,6 @@
   },
   "homepage": "https://github.com/finspot/technical_test-senior_software_engineer#readme",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "dependencies": {
     "prettier": "^2.5.0"
   }
